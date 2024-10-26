@@ -5,13 +5,12 @@ import Header from './SecondaryComponents/Header'
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   
+    <Header/>
     <BrowserRouter>
-
     <Routes>
-      <Header/>
       <Route/>
     </Routes>
     </BrowserRouter>
