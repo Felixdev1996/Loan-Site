@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLandmark, faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons';
-import list from 'list.json';
+// import list from 'list.json';
 
 
 
@@ -38,7 +38,7 @@ function Header() {
                     <FontAwesomeIcon icon={faCaretUp} className='ml-[5px]' />
                   )} 
                 </div>
-                {isOpen && (
+                {/* {isOpen && (
                   <div className='absolute bg-black'>
                     {list.map((item, i) => (
                       <div key={i}>
@@ -46,7 +46,7 @@ function Header() {
                       </div>
                     ))}
                   </div>
-                )}
+                )} */}
                
                <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider'>Contact Us</div>
              </div>
