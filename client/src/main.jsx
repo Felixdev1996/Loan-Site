@@ -7,10 +7,9 @@ import Footer from './SecondaryComponents/Footer'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   
+   <Footer/>
     <BrowserRouter>
     <Header/>
-    <Footer/>
       <Routes>
         <Route/>
 
