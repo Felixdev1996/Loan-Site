@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLandmark, faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons';
+import { faLandmark, faCaretDown, faCaretUp, faBars } from '@fortawesome/free-solid-svg-icons';
+import Modal from './Modal';
 // import list from 'list.json';
 
 
@@ -8,51 +9,69 @@ import { faLandmark, faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-
 function Header() {
     const [isOpen, setIsOpen] = useState(false)
 
+    let [top, setTop] = useState("-100vh")
+
+    function boy() {
+      if (top== "-100vh") {
+        setTop(0)
+      } else {
+        setTop("-100vh")
+      }
+    }
+
   return (
     <div>
 
-      <div className='h-[50px] grid grid-cols-[70%,30%] md:grid md:grid-cols-2 lg:h-[90px] lg:grid lg:grid-cols-[30%,70%]'>
-             <div className='bg-[white] h-[70px] md:h-[100px] lg:h-[120px]'>
+      <div className='h-[50px] w-full grid grid-cols-[70%,30%] md:grid md:grid-cols-2 lg:h-[90px] lg:grid lg:grid-cols-[30%,70%,]'>
+             <div className='bg-[white] h-[0px] md:h-[px] lg:h-[120px]'>
 
-              <h2 className='text-[20px] md:text-[25px] lg:text-[29px] font-bold text-[rgb(35,37,111)] mt-[15px] md:mt-[19px] lg:mt-[27px] ml-[10px] md:ml-[15px] lg:ml-[65px]'><FontAwesomeIcon icon={faLandmark} className='text-[40px] md:text-[50px]' /> Bitxbase Loan</h2>
+              <h2 className='text-[20px] md:text-[25px] lg:text-[29px] font-bold text-[rgb(35,37,111)] mt-[15px] md:mt-[19px] lg:mt-[27px] ml-[10px] md:ml-[15px] lg:ml-[65px]'><FontAwesomeIcon icon={faLandmark} className='text-[40px] md:text-[50px] whitespace-nowrap' /> Bitxbase Loan</h2>
 
              </div>
 
-             <div className='bg-[white] flex justify-center items-center gap-[10px] ml-[35px]'>
+              <div className="hidden lg:inline-block mt-[20px] lg:mt-[40px]">
+              <div className='bg-[white] flex justify-center items-center gap-[10px] ml-[35px] '>
 
-               <div className='text-[rgb(38,106,225)] text-[15px] font-bold cursor-pointer tracking-wider'>Home</div>
+              <div className='text-[rgb(38,106,225)] text-[15px] font-bold cursor-pointer tracking-wider'>Home</div>
 
-               <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider'>About</div>
+              <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider'>About</div>
 
-               <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider'>Loan Program</div>
+              <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider whitespace-nowrap'>Loan Program</div>
 
-               <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider'>Acceptance Payment</div>
+              <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider whitespace-nowrap'>Acceptance Payment</div>
 
-               <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider relative'
-                onClick={() => setIsOpen((prev) => !prev)}>
-                
-                Page 
-                  {!isOpen ? (
-                    <FontAwesomeIcon icon={faCaretDown} className='ml-[5px]' />
-                  ): (
-                    <FontAwesomeIcon icon={faCaretUp} className='ml-[5px]' />
-                  )} 
-                </div>
-                {/* {isOpen && (
-                  <div className='absolute bg-black'>
-                    {list.map((item, i) => (
-                      <div key={i}>
-                        <h3>{item.pages}</h3>
-                      </div>
-                    ))}
+              <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider relative whitespace-nowrap'
+              onClick={() => setIsOpen((prev) => !prev)}>
+              
+              Page 
+              {!isOpen ? (
+                <FontAwesomeIcon icon={faCaretDown} className='ml-[5px]' />
+              ): (
+                <FontAwesomeIcon icon={faCaretUp} className='ml-[5px]' />
+              )} 
+            </div>
+            {/* {isOpen && (
+              <div className='absolute bg-black'>
+                {list.map((item, i) => (
+                  <div key={i}>
+                    <h3>{item.pages}</h3>
                   </div>
-                )} */}
-               
-               <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider'>Contact Us</div>
-             </div>
-      </div>
+                ))}
+              </div>
+            )} */}
 
-    </div>
+              <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider whitespace-nowrap'>Contact Us</div>
+
+
+        </div>
+              </div>
+                    <button className='text-[27px] text-[rgb(35,37,111)] hover:text-[rgb(84,137,230)] lg:hidden  h-[40px] w-[40px] mt-[23px] md:mt-[32px] ml-[40px] md:ml-[320px] rounded-[3px] shadow ' onClick={boy}><FontAwesomeIcon icon={faBars} className='py-[px] px-[px]'/></button>
+
+                    
+        </div>
+
+         <Modal mod={top} modal={boy}/>   
+      </div>
   )
 }
 
