@@ -13,19 +13,17 @@ import Accept from './AcceptanceComponents/Accept'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+
+   
     <BrowserRouter>
     <Header/>
       <Routes>
-      
-        <Route path='/' element={<Home/>}/>
+      <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/loan' element={<Loan/>}/>
         <Route path='/pages' element={<Pages/>}/>
         <Route path='/accept' element={<Accept/>}/>
-
-
-
       </Routes>
       <Footer/>
     </BrowserRouter>
