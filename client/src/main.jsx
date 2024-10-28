@@ -4,7 +4,6 @@ import './index.css'
 import Header from './SecondaryComponents/Header'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Footer from './SecondaryComponents/Footer'
-import Home from './SecondaryComponents/Home'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
