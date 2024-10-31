@@ -4,4 +4,48 @@
 
 body{
     font-family: arial;
+    height: 100vh;
 }
+.pagehover{
+    transition: 1s;
+}
+.pagehover:hover .showpage{
+    display: block;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+.showpage{
+    display: none;
+}
+
+
+/* Image slides in from the left */
+/* @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } */
+  
+  /* Image slides in from the right */
+  /* @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } */
+  
+  /* Apply slide-in-left animation */
+  /* .slide-in-left {
+    animation: slideInLeft 0.5s ease-out;
+  } */
+  
+  /* Apply slide-in-right animation */
+  /* .slide-in-right {
+    animation: slideInRight 0.5s ease-out;
+  }
+   */
+  
