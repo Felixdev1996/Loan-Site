@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 function Modal({mod,modal}) {
 
@@ -22,11 +23,14 @@ function Modal({mod,modal}) {
 
         <div className='text-[rgb(38,106,225)] bg-[rgb(219,229,246)] px-[25px] py-[13px] text-[18px] font-bold cursor-pointer tracking-wider '>Home</div>
 
-        <div className='text-[rgb(34,69,133)] text-[17px] font-bold px-[25px] py-[10px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider'>About</div>
+        <div className='text-[rgb(34,69,133)] text-[17px] font-bold px-[25px] py-[10px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider'>
+          <Link to='/about'>About</Link></div>
 
-        <div className='text-[rgb(34,69,133)] text-[17px] font-bold px-[25px] py-[10px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider whitespace-nowrap'>Loan Program</div>
+        <div className='text-[rgb(34,69,133)] text-[17px] font-bold px-[25px] py-[10px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider whitespace-nowrap'>
+          <Link to='/loan'>Loan Program</Link></div>
 
-        <div className='text-[rgb(34,69,133)] text-[17px] font-bold px-[25px] py-[10px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider whitespace-nowrap'>Acceptance Payment</div>
+        <div className='text-[rgb(34,69,133)] text-[17px] font-bold px-[25px] py-[10px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider whitespace-nowrap'>
+          <Link to='/accept'>Acceptance Payment</Link></div>
 
         <div className='text-[rgb(34,69,133)] text-[17px] font-bold px-[25px] py-[10px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider relative whitespace-nowrap peer '
         onClick={dropDown}>
@@ -52,7 +56,8 @@ function Modal({mod,modal}) {
        
        
 
-        <div className='text-[rgb(34,69,133)] text-[17px] font-bold px-[25px] py-[10px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider whitespace-nowrap w-full sticky bottom-[300px] '>Contact Us</div>
+        <div className='text-[rgb(34,69,133)] text-[17px] font-bold px-[25px] py-[10px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider whitespace-nowrap w-full sticky bottom-[300px] '>
+          <Link to='/contact'>Contact Us</Link></div>
 
       </div>
     </div>

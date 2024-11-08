@@ -18,6 +18,17 @@ body{
 }
 
 
+.loo{
+  background-image: url(AcceptanceComponents/loan5.jpg);
+  background-size: 100% 100%;
+}
+
+.loan{
+  background-image: url(SecondaryComponents/loanpay.png);
+  background-size: 100% 100%;
+}
+
+
 /* Image slides in from the left */
 /* @keyframes slideInLeft {
     from {
