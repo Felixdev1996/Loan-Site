@@ -76,9 +76,9 @@ function About() {
                   </Slider>
                 </div>
             </section>
-            <section className='shadow-md'>
-                <h1 className='font-semibold text-2xl pt-8 ml-2 md:text-4xl lg:text-5xl mb-5'>WHO WE ARE</h1>
-                <h2 className='font-bold text-2xl md:text-4xl lg:text-4xl ml-3'>Provide Excellent service</h2>
+            <section className=''>
+                <h1 className='font-semibold text-2xl pt-8 ml-2 md:text-4xl lg:text-5xl mb-8'>WHO WE ARE</h1>
+                <h2 className='font-bold text-2xl md:text-4xl lg:text-4xl ml-3 text-[rgb(34,69,133)] mb-7'>Provide Excellent service</h2>
                 <h2 className='ml-2 mr-2 font-bold text-justify text-xl md:text-2xl lg:text-3xl'>At BitxBase Loan Company, we pride ourselves on providing exceptional loan services tailored to meet the unique needs of each client. With a focus on transparency, flexibility, and personal support, we strive to make borrowing an empowering experience, not just a transaction. Our team of dedicated professionals brings years of industry expertise to the table, ensuring you receive top-quality guidance, competitive rates, and customized solutions.</h2>
             </section>
         </div>
