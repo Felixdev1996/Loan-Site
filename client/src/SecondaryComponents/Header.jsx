@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLandmark, faCaretDown, faCaretUp, faBars, faX } from '@fortawesome/free-solid-svg-icons';
 import Modal from './Modal';
+import { Link } from 'react-router-dom';
+// import About from '../AboutComponents/About';
+// import Accept from '../AcceptanceComponents/Accept';
 // import list from 'list.json';
 
 
@@ -26,6 +29,7 @@ function Header() {
       
     //   const betterWork = document.getElementById('man')
       
+    
     //   if (betterWork.innerHTML === <FontAwesomeIcon icon={faBars} className='py-[px] px-[px]'/>) {
     //     <FontAwesomeIcon icon={faX} />
     //   } else {
@@ -35,7 +39,7 @@ function Header() {
 
   return (
     <div>
-
+      {/* <Accept/> */}
       <div className='h-[70px] w-full grid grid-cols-[70%,30%] md:grid md:grid-cols-2 lg:h-[90px] lg:grid lg:grid-cols-[30%,70%,] relative z-10 bg-white'>
              <div className='bg-[white]  md:h-[px] lg:h-[120px]'>
 
@@ -46,13 +50,17 @@ function Header() {
               <div className="hidden lg:inline-block mt-[20px] lg:mt-[40px]">
               <div className='bg-[white] flex justify-center items-center gap-[10px] ml-[35px] '>
 
-              <div className='text-[rgb(38,106,225)] text-[15px] font-bold cursor-pointer tracking-wider'>Home</div>
+              <div className='text-[rgb(38,106,225)] text-[15px] font-bold cursor-pointer tracking-wider'>
+                <Link to='/'>Home</Link></div>
 
-              <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider'>About</div>
+              <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider'>
+                <Link to='/about'>About</Link></div>
 
-              <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider whitespace-nowrap'>Loan Program</div>
+              <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider whitespace-nowrap'>
+                <Link to='/loan'>Loan Program</Link></div>
 
-              <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider whitespace-nowrap'>Acceptance Payment</div>
+              <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider whitespace-nowrap'>
+                <Link to='/accept'>Acceptance Payment</Link></div>
 
               <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider relative whitespace-nowrap pagehover'
               onClick={() => setIsOpen((prev) => !prev)}>
@@ -89,7 +97,8 @@ function Header() {
               </div>
             )} */}
 
-              <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider whitespace-nowrap'>Contact Us</div>
+              <div className='text-[rgb(34,69,133)] text-[15px] font-bold px-[25px] py-[13px] hover:bg-[rgb(219,229,246)] hover:text-[rgb(84,137,230)] transition duration-[0.5s] cursor-pointer tracking-wider whitespace-nowrap'>
+                <Link to='/contact'>Contact Us</Link></div>
 
 
         </div>

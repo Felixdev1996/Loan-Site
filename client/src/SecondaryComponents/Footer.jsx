@@ -2,14 +2,19 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLandmark, } from '@fortawesome/free-solid-svg-icons';
 
+import loanpay from './loanpay.png'
+
 function Footer() {
   return (
 
-    <div className='bg-blue-950 h-[300px] relative top-[1000px] md:top-[655px] lg:top-[1000px] '>
-      
 
-    <div className='bg-blue-950 h-[1500px] p-5 lg:p-8 mt-96 grid grid-cols-1 md:grid-cols-4 lg:h-[400px] md:h-[750px] md:grid-rows-2 lg:grid-rows-1 lg:grid-cols-5'>
-        <div className=' md:col-span-full lg:col-auto md:mb-3 lg:mb-0'>
+    <div className='bg-blue-950 h-[300px] relative '>
+      
+    <main className='loan h-[150px] md:h-[200px] lg:h-[250px] mt-[560px] md:mt-[660px] lg:mt-[250px]'>
+      
+    </main>
+    <div className='bg-blue-950 h-[1500px] p-5 lg:p-8 grid grid-cols-1 md:grid-cols-4 lg:h-[400px] md:h-[750px] md:grid-rows-2 lg:grid-rows-1 lg:grid-cols-5'>
+        <div className=' md:col-span-full lg:col-auto md:mb-3 lg:mb-3'>
           <FontAwesomeIcon icon={faLandmark} className=' shadow-lg text-white mb-2 lg:mt-14 mt-8 text-9xl lg:text-9xl md:mt-14 md:text-[180px] ml-24 md:ml-72 lg:ml-20 lg:mb-3'/>
           <h1 className='font-bold text-3xl text-white lg:text-2xl md:text-6xl md:text-center text-center '>BIXBASE LOAN APP</h1></div>
         <div className=''><h1 className='mt-8 font-bold text-3xl md:text-xl text-white lg:text-3xl mb-3 ml-2 lg:mt-14'>ABOUT US</h1>
