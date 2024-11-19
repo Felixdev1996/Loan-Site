@@ -24,7 +24,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/loan' element={<Loan/>}/>
         <Route path='/pages' element={<Pages/>}/>
         <Route path='/accept' element={<Accept/>}/>
-      </Routes>
+       </Routes>
       <Footer/>
     </BrowserRouter>
   </StrictMode>,

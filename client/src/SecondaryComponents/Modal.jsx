@@ -1,9 +1,15 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
+<<<<<<< HEAD
+import { useState } from 'react';
+=======
 import { Link } from 'react-router-dom';
+>>>>>>> 8ceb52e30551b4e8bcde29c842f50e6ea4fb443f
 
 function Modal({mod,modal}) {
+
+  const [isOpen, setIsOpen] = useState(false)
 
     function dropDown() {
       const menu = document.getElementById('work')
@@ -36,7 +42,6 @@ function Modal({mod,modal}) {
         onClick={dropDown}>
 
         Page 
-        
                 <FontAwesomeIcon icon={faCaretDown} className='ml-[5px]' />
 
                 <div className='absolute bg-white left-[0px] top-[45px] leading-[3] w-full transition-all duration-500 h-[270px] hidden z-10' id='work'>

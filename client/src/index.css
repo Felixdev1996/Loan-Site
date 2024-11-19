@@ -17,6 +17,13 @@ body{
 .showpage{
     display: none;
 }
+.man:hover .manboy{
+  color: white;
+  transition: 1.5s;
+}
+.man:hover{
+  background-color: rgb(38,106,225)
+}
 
 
 .loo{
