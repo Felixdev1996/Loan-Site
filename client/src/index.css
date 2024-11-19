@@ -5,6 +5,7 @@
 body{
     font-family: arial;
     height: 100vh;
+    overflow-x: hidden;
 }
 .pagehover{
     transition: 1s;
