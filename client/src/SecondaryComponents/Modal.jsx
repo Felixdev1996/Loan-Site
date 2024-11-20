@@ -1,11 +1,10 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
-<<<<<<< HEAD
+
 import { useState } from 'react';
-=======
+
 import { Link } from 'react-router-dom';
->>>>>>> 8ceb52e30551b4e8bcde29c842f50e6ea4fb443f
 
 function Modal({mod,modal}) {
 

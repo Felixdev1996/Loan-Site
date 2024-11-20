@@ -35,13 +35,13 @@ function About() {
 
         <> 
 
-        <div className='mb-40 gap-1 h-[480px] md:h-[380px] lg:h-[370px] bg-blue-300 mt-10 grid grid-cols-1 md:grid-cols-2'>
-            <section>
+        <div className='mb-40 gap-1 h-[480px] md:h-[380px] lg:h-[370px] mt-10 grid grid-cols-1 md:grid-cols-2'>
+            <section className=''>  
               <h1 className='pt-6 ml-4 font-bold text-xl mb-3 md:text-xl lg:text-2xl text-white'>OUR ABOUT PAGE</h1>
               <h2 className='ml-2 mr-2 font-semibold text-justify md:text-xl lg:text-2xl text-black'>Welcome to Bitxbase Loan, where we make borrowing simple, secure, and tailored to your needs. We believe in empowering our clients with transparent, accessible loan options that help turn goals into reality. Whether you’re looking to finance a new home, start a business, or consolidate debt, our team is dedicated to finding the right solution for you.</h2>
             </section>
             <section>
-              <img className='h-full w-[100%] lg:h-[78%] lg:w-full' src={loan3}/>
+              <img className='h-full w-[100%] lg:h-[80%] lg:w-full' src={loan3}/>
             </section>
         </div>
 
@@ -77,8 +77,8 @@ function About() {
                 </div>
             </section>
             <section className=''>
-                <h1 className='font-semibold text-xl pt-8 ml-2 md:text-xl lg:text-3xl mb-8'>WHO WE ARE</h1>
-                <h2 className='font-bold text-xs md:text-xl lg:text-2xl ml-3 text-[rgb(34,69,133)] mb-7'>Provide Excellent service</h2>
+                <h1 className='font-semibold text-xl pt-8 ml-2 md:text-xl lg:text-2xl'>WHO WE ARE</h1>
+                <h2 className='font-bold text-xs md:text-xl lg:text-3xl ml-3 text-[rgb(34,69,133)] mb-7'>Provide Excellent service</h2>
                 <h2 className='ml-2 mr-3 font-bold text-justify text-xl md:text-xl lg:text-2xl'>At BitxBase Loan Company, we pride ourselves on providing exceptional loan services tailored to meet the unique needs of each client. With a focus on transparency, flexibility, and personal support, we strive to make borrowing an empowering experience, not just a transaction. Our team of dedicated professionals brings years of industry expertise to the table, ensuring you receive top-quality guidance, competitive rates, and customized solutions.</h2>
             </section>
         </div>
