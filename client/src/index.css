@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 body{
     font-family: arial;
     height: 100vh;
+    background-color: white
+    ;
 }
 .pagehover{
     transition: 1s;

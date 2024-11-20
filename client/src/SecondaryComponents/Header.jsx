@@ -43,7 +43,7 @@ function Header() {
       <div className='h-[70px] w-full grid grid-cols-[70%,30%] md:grid md:grid-cols-2 lg:h-[90px] lg:grid lg:grid-cols-[30%,70%,] relative z-10 bg-white'>
              <div className='bg-[white]  md:h-[px] lg:h-[120px]'>
 
-              <h2 className='text-[20px] md:text-[25px] lg:text-[29px] font-bold text-[rgb(35,37,111)] mt-[15px] md:mt-[19px] lg:mt-[27px] ml-[10px] md:ml-[15px] lg:ml-[65px] cursor-pointer w-[185px] md:w-[230px] lg:w-[260px]'><FontAwesomeIcon icon={faLandmark} className='text-[40px] md:text-[50px] whitespace-nowrap' /> Bitxbase Loan</h2>
+              <h2 className='text-[20px] md:text-[25px] lg:text-[29px] font-bold text-[rgb(35,37,111)] mt-[15px] md:mt-[19px] lg:mt-[27px] ml-[10px] md:ml-[15px] lg:ml-[65px] cursor-pointer w-[185px] md:w-[230px] lg:w-[260px]'><FontAwesomeIcon icon={faLandmark} className='text-[40px] md:text-[50px] whitespace-nowrap' /> <Link to= '/'> Bitxbase Loan </Link></h2>
 
              </div>
 
