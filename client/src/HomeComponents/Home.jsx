@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Capture from './Capture.png';
+import Scroll from './Scroll';
 
 
 
@@ -383,7 +384,31 @@ function Home() {
         </div>
       </div>
 
-      <div className='bg-red-400 h-[900px] md:h-[900px] lg:h-[700px]'></div>
+      <div className='bg-white h-fit mt-[150px] grid grid-cols-1 lg:grid-cols-2'>
+        
+        <div className='grid grid-cols-1 bg-gray-500 h-fit'>
+          <div className='bg-white h-[225px] md:h-[250px] lg:h-[350px]'>
+            <p className='text-[rgb(147,150,170)] text-[20px] font-semibold tracking-wider ml-[10px] lg:ml-[70px] mb-[20px]'>OUR MISSION</p>
+            <p className='font-semibold text-[25px] md:text-[30px] lg:text-[35px] text-[rgb(12,51,121)] ml-[10px] lg:ml-[70px] w-[350px] md:w-[400px] lg:w-[450px] mb-[20px]'>Helping Find Solutions For Customers Since 1990</p>
+            <p className='text-[rgb(147,150,154)] ml-[10px] lg:ml-[70px] pr-[5px] md:w-[650px] lg:w-[360px] leading-[20px]'>Delivering reliable, customized financial solutions for over 30 years. We're here to help you make informed decisions and achieve your dreams.</p>
+          </div>
+          
+          
+          <div className='bg-white'>
+            {/* <div className='bg-gradient-to-l from-[rgb(249,253,255)] to-[rgb(220,235,252)] py-[40px] px-[45px]'>1600</div>
+            <div className='bg-gradient-to-l from-[rgb(249,253,255)] to-[rgb(220,235,252)] py-[40px] px-[45px] mt-[5px]'>1600</div>
+            <div className='bg-gradient-to-l from-[rgb(249,253,255)] to-[rgb(220,235,252)] py-[40px] px-[45px] mt-[5px]' >1600</div> */}
+
+            <Scroll/>
+          </div>
+        </div>
+        
+        
+        <div className='bg-white h-fit'>
+          <img src="https://demo.strongtheme.com/americancredit/wp-content/uploads/sites/4/2021/06/amecreho017-800x533.png" />
+          <img src="https://demo.strongtheme.com/americancredit/wp-content/uploads/sites/4/2021/06/Bbb_logo_PNG1-800x409.png" className='relative w-[200px] md:w-[400px] lg:w-[350px] bottom-[75px] md:bottom-[150px] lg:bottom-[130px] left-[-5px] md:left-[-19px] lg:left-[-10px]'/>
+        </div>
+      </div>
 
 
       
