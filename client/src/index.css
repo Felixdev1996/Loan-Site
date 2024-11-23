@@ -7,8 +7,12 @@
 body{
     font-family: arial;
     height: 100vh;
+
     background-color: white
     ;
+
+    overflow-x: hidden;
+
 }
 .pagehover{
     transition: 1s;
@@ -30,12 +34,23 @@ body{
 
 
 .loo{
-  background-image: url(AcceptanceComponents/loan5.jpg);
+  background-image: url(AcceptanceComponents/accepta.jpg);
   background-size: 100% 100%;
 }
 
 .loan{
   background-image: url(SecondaryComponents/loanpay.png);
+  background-size: 100% 100%;
+}
+
+.big{
+  background-image: url(AcceptanceComponents/loanbg.jpg);
+  background-size: 100% 100%;
+  background-blend-mode: lighten;
+}
+
+.lon{
+  background-image: url(ContactComponents/loon.jpg);
   background-size: 100% 100%;
 }
 

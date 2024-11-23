@@ -10,7 +10,7 @@ function Footer() {
 
     <div className='bg-blue-950 h-[300px] relative '>
       
-    <main className='loan h-[150px] md:h-[200px] lg:h-[250px] mt-[560px] md:mt-[660px] lg:mt-[250px]'>
+    <main className='loan h-[150px] md:h-[200px] lg:h-[250px]'>
       
     </main>
     <div className='bg-blue-950 h-[1500px] p-5 lg:p-8 grid grid-cols-1 md:grid-cols-4 lg:h-[400px] md:h-[750px] md:grid-rows-2 lg:grid-rows-1 lg:grid-cols-5'>

@@ -5,6 +5,12 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 
+
+// import { useState } from 'react';
+
+// import { Link } from 'react-router-dom';
+
+
 function Modal({mod,modal}) {
 
   const [isOpen, setIsOpen] = useState(false)

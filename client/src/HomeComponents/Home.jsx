@@ -39,6 +39,90 @@ function Home() {
     }, []);
 
 
+    let [move, setMove] = useState('0px')
+  let [movePlus1,setMovePlus1] = useState("+")
+
+  let [mover, setMover] = useState('0px')
+  let [movePlus2,setMovePlus2] = useState("+")
+
+  let [moves, setMoves] = useState('0px')
+  let [movePlus3,setMovePlus3] = useState("+")
+
+  let [movest, setMovest] = useState('0px')
+  let [movePlus4,setMovePlus4] = useState("+")
+
+
+
+
+  function cc() {
+    if (move == '0px') {
+      setMove('70px')
+      setMoves('0px')
+      setMovest('0px')
+      setMover("0px")
+      setMovePlus1("-")
+      setMovePlus2('+')
+      setMovePlus3('+')
+      setMovePlus4('+')
+    } else {
+      setMove("0px")
+      setMovePlus1("+")
+    }
+  }
+
+  function dd() {
+    if (mover == '0px') {
+      setMover('70px')
+      setMove('0px')
+      setMovest('0px')
+      setMove('0px')
+      setMoves('0px')
+      setMovePlus2('-')
+      setMovePlus1("+")
+      setMovePlus3('+')
+      setMovePlus4('+')
+    } else {
+      setMover('0px')
+      setMovePlus2('+')
+    }
+    
+  }
+
+  function aa() {
+    if (moves == '0px') {
+      setMoves('70px')
+      setMove('0px')
+      setMover('0px')
+      setMovest('0px')
+      setMovePlus3('-')
+      setMovePlus2('+')
+      setMovePlus1("+")
+      setMovePlus4('+')
+    } else {
+      setMoves('0px')
+      setMover('0px')
+      setMovePlus3('+')
+    }
+  }
+
+  function bb() {
+    if (movest == '0px') {
+      setMovest('70px')
+      setMove('0px')
+      setMover('0px')
+      setMoves('0px')
+      setMovePlus4('-')
+      setMovePlus1("+")
+      setMovePlus2('+')
+      setMovePlus3('+')
+    } else {
+      setMovest('0px')
+      setMoves('0px')
+      setMovePlus4('+')
+    }
+  }
+
+
     
   
   return (
@@ -239,50 +323,67 @@ function Home() {
       </div>
       
 
-      <div className='bg-green-500 h-[300px] mt-[140px] grid grid-cols-1 md:grid-cols-2'>
+      <div className='bg-white h-fit mt-[140px] grid grid-cols-1 md:grid-cols-2'>
+
+        
         <div className='bg-white'>
           <img src="https://demo.strongtheme.com/americancredit/wp-content/uploads/sites/4/2021/06/ameioc023-800x461.png" className='w-[85%] ml-[30px] lg:ml-[50px]'/>
         </div>
-        <div className='bg-white'>
-          <p className='text-[rgb(12,51,121)] text-[25px] md:text-[30px] lg:text-[35px]'>Consumer Information</p>
-          <p className='text-[rgb(122,122,161)]'>Useful consumer information about Credit Acceptance</p>
 
-          <div className="lg:mt-[20px]">
+        
+        <div className='bg-white mt-[20px] md:mt-0'>
+          <p className='text-[rgb(12,51,121)] text-[25px] md:text-[30px] lg:text-[33px] ml-[10px] md:ml-0 tracking-wider'>Consumer Information</p>
+          <p className='text-[rgb(147,150,154)] tracking-widest ml-[10px] md:ml-0 mt-[15px] mb-[15px]'>Useful consumer information about Credit Acceptance</p>
+
+          <main className='mt-2 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[70%,30%] lg:gap-4'>
+          <section className=''>
             
-            <div className="collapse collapse-plus   rounded-none mb-[10px] lg:w-[630px]">
-              <input type="radio" name="my-accordion-3" defaultChecked />
-              <div className="text-xl font-medium collapse-title text-[rgb(38,106,225)] bg-[rgb(224,235,255)]">Credit Acceptance offers indirect auto financing</div>
-              <div className="collapse-content">
-                <p className='bg-[rgb(249,249,249)]'>hello</p>
-              </div>
+            <div className='h-[90px] md:h-[90px] lg:h-[50px] bg-[rgb(224,235,255)] mr-4    lg:w-[600px]'onClick={cc}>
+              <h1 className='pt-[15px] md:pt-[10px] ml-4 text-[rgb(38,106,225)] lg:pt-[0px] lg:text-nowrap tracking-wider w-[250px] md:w-[250px] font-semibold'>Credit Acceptance offers indirect auto financing
+                <span className='text-2xl ml-[240px] md:ml-[220px] lg:ml-[140px] lg:text-3xl relative bottom-[50px] lg:bottom-0'>{movePlus1}</span>
+              </h1>
             </div>
-            
-            <div className="collapse collapse-plus  rounded-none mb-[10px] lg:w-[630px]">
-              <input type="radio" name="my-accordion-3" />
-              <div className="text-xl font-medium collapse-title text-[rgb(38,106,225)] bg-[rgb(224,235,255)]">Most contract terms are set by the dealership.</div>
-              <div className="collapse-content">
-                <p className='bg-[rgb(249,249,249)]'>hello</p>
-              </div>
-            </div>
-            
-            <div className="collapse collapse-plus  rounded-none mb-[10px] lg:w-[630px]">
-              <input type="radio" name="my-accordion-3" />
-              <div className="text-xl font-medium collapse-title text-[rgb(38,106,225)] bg-[rgb(224,235,255)]">Participating Credit Acceptance dealerships</div>
-              <div className="collapse-content">
-              <p className='bg-[rgb(249,249,249)]'>hello</p>
-             </div>
+            <div className=' h-fit lg:w-[600px] bg-[rgb(249,249,249)] mr-4  mt-1 duration-1000 overflow-hidden' style={{height:move}}>
+              <h1 className='p-1  text-justify text-[15px] text-[rgb(147,150,154)] px-[15px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h1>
             </div>
 
-            <div className="collapse collapse-plus  rounded-none mb-[10px] lg:w-[630px]">
-              <input type="radio" name="my-accordion-3" />
-              <div className="text-xl font-medium collapse-title text-[rgb(38,106,225)] bg-[rgb(224,235,255)]">Nearly any vehicle works on the Credit Acceptance</div>
-              <div className="collapse-content">
-              <p className='bg-[rgb(249,249,249)]'>hello</p>
-             </div>
+            <div className='h-[90px] md:h-[90px] lg:h-[50px] bg-[rgb(224,235,255)] mr-4 mt-[10px]   lg:w-[600px]'onClick={dd}>
+              <h1 className='pt-[15px] md:pt-[10px] ml-4 text-[rgb(38,106,225)] lg:pt-[0px] lg:text-nowrap tracking-wider w-[250px] md:w-[250px] font-semibold'>Most contract terms are set by the dealership.
+                <span className='text-2xl ml-[225px] md:ml-[205px] lg:ml-[155px] lg:text-3xl relative bottom-[50px] lg:bottom-0'>{movePlus2}</span>
+                </h1>
             </div>
-          </div>
+            <div className=' h-fit lg:w-[600px] bg-[rgb(249,249,249)] mr-4  mt-1 duration-1000 overflow-hidden' style={{height:mover}}>
+              <h1 className='p-1  text-justify text-[15px] text-[rgb(147,150,154)] px-[15px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h1>
+            </div>
+
+            <div className='h-[90px] md:h-[90px] lg:h-[50px] bg-[rgb(224,235,255)] mr-4  mt-[10px]   lg:w-[600px]'onClick={aa}>
+              <h1 className='pt-[15px] md:pt-[10px] ml-4 text-[rgb(38,106,225)] lg:pt-[0px] lg:text-nowrap tracking-wider w-[250px] md:w-[250px] font-semibold'>Participating Credit Acceptance dealerships
+                <span className='text-2xl ml-[220px] md:ml-[203px] lg:ml-[173px] lg:text-3xl relative bottom-[50px] lg:bottom-0'>{movePlus3}</span>
+                </h1>
+            </div>
+            <div className='h-fit lg:w-[600px] bg-[rgb(249,249,249)] mr-4  mt-1 duration-1000 overflow-hidden' style={{height:moves}}>
+              <h1 className='p-1  text-justify text-[15px] text-[rgb(147,150,154)] px-[15px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h1>
+            </div>
+
+            <div className='h-[90px] md:h-[90px] lg:h-[50px] bg-[rgb(224,235,255)] mr-4  mt-[10px]   lg:w-[600px]'onClick={bb}>
+              <h1 className='pt-[15px] md:pt-[10px] ml-4 text-[rgb(38,106,225)] lg:pt-[0px] lg:text-nowrap tracking-wider w-[250px] md:w-[250px] font-semibold'>Nearly any vehicle works on the Credit Acceptance
+                <span className='text-2xl ml-[220px] md:ml-[205px] lg:ml-[115px] lg:text-3xl relative bottom-[50px] lg:bottom-0'>{movePlus4}</span>
+                </h1>
+            </div>
+            <div className='h-fit lg:w-[600px] bg-[rgb(249,249,249)] mr-4  mt-1 duration-1000 overflow-hidden' style={{height:movest}}>
+              <h1 className='p-1  text-justify text-[15px] text-[rgb(147,150,154)] px-[15px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</h1>
+            </div>
+          </section>
+          
+         
+          
+        </main>
+
+
         </div>
       </div>
+
+      <div className='bg-red-400 h-[900px] md:h-[900px] lg:h-[700px]'></div>
 
 
       
