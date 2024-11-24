@@ -101,7 +101,7 @@ const ScrollCounters = () => {
         </div>
       </div>
 
-      <div></div>
+      <div className="h-6 bg-blue-400"></div>
     </div>
   );
 };
