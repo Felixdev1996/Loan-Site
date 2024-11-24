@@ -100,6 +100,8 @@ const ScrollCounters = () => {
           <p className="text-[18px] font-normal tracking-wider">Happy Clients</p>
         </div>
       </div>
+
+      <div></div>
     </div>
   );
 };
